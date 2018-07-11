@@ -1,44 +1,13 @@
 //
-//  PickerViewController.swift
+//  Extension_PickerViewController.swift
 //  BelizeBus
 //
-//  Created by 辛忠翰 on 2018/6/11.
+//  Created by 辛忠翰 on 2018/7/11.
 //  Copyright © 2018 辛忠翰. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
-
-class PickerViewController: UIViewController {
-    let slideRightTransitionAnimator = SlideRightTransitionAnimator()
-    var rightBarButtonItem: UIBarButtonItem?
-    
-    var northernSchedules = [NorthernBusSchedule]()
-    var westernSchedules = [WesternBusSchedule]()
-    var southernSchedules = [SouthernBusSchedule]()
-    var newNorthernSchedules = [NorthernBusSchedule]()
-    var newWesternSchedules = [WesternBusSchedule]()
-    var newSouthernSchedules = [SouthernBusSchedule]()
-    var busRoute: String?
-    
-    var busInformation: BusInformation?
-    
-    lazy var scheduleView: ScheduleView = {
-        let view = ScheduleView()
-        view.decideDoneBtnDelegate = self
-        view.fetchBusRouteDelegate = self
-        view.itinerarySelectionPickerView.fetchFinalBusRouteDelegate = self
-        return view
-    }()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupView()
-        setupNaviStyle()
-    }
-    
-}
-
-
 
 extension PickerViewController{
     func fetchBustRoute(){
@@ -140,7 +109,7 @@ extension PickerViewController{
     }
     
     
-    fileprivate func doneButtonItemDisabled() {
+    func doneButtonItemDisabled() {
         rightBarButtonItem = UIBarButtonItem(title: NaviItemLabelText.DoneItem.rawValue , style: .plain, target: self, action: #selector(handleDoneItem))
         rightBarButtonItem?.setTitleTextAttributes(
             [
@@ -170,7 +139,7 @@ extension PickerViewController{
             let day = scheduleView.busStartDay,
             let hour = scheduleView.busStartHour
             else {
-            return
+                return
         }
         print("busRoute: ",busRoute)
         print("startStation: ",startStation)
@@ -215,38 +184,4 @@ extension PickerViewController{
         rightBarButtonItem.isEnabled = btnStyle.set.isUserInteract
     }
     
-}
-
-extension PickerViewController: DecideDoneBtnStateDlegate{
-    func disebleDoneState() {
-        navigationItem.rightBarButtonItem?.isEnabled = DoneBtnStyle.Disable.set.isUserInteract
-        
-    }
-    
-    func changeDoneState(isEnable: Bool) {
-        if isEnable{
-           setupRightBarButtonItem(btnStyle: DoneBtnStyle.Enable)
-            
-        }else{
-           setupRightBarButtonItem(btnStyle: DoneBtnStyle.Disable)
-        }
-    }
-}
-
-
-extension PickerViewController: FetchBusRouteDelegate{
-    func fetchBusRoute(busRoute: String) {
-        scheduleView.itinerarySelectionPickerView.busArea = busRoute
-        scheduleView.itineraryTableViewCell?.subTitleLabel.text = SubtilteLabelBasicContent.Itinerary.rawValue
-        scheduleView.itineraryTableViewCell?.subTitleLabel.textColor = UIColor.classicBrown
-        scheduleView.itineraryTableViewCell?.subTitleLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        doneButtonItemDisabled()
-    }
-}
-
-
-extension PickerViewController: FetchFinalBusRouteDelegate{
-    func fetchFinalBusRoute(busRoute: String) {
-        self.busRoute = busRoute
-    }
 }
