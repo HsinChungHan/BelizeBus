@@ -43,7 +43,8 @@ class ResultViewController: UIViewController {
     
     //被使用者選中要展開的cell(要做點擊才展開的tableView)
     var selectedCellIndexPath = IndexPath(row: 0, section: 0)
-    var popCellHeight: CGFloat = 266
+//    var popCellHeight: CGFloat = 266
+    var popCellHeight: CGFloat = 500
     
     
     
@@ -68,6 +69,7 @@ class ResultViewController: UIViewController {
         setupNaviStyle()
         registerCell()
         setupTableViewStyle()
+        print(UIScreen.main.bounds.width)
     }
 }
 
@@ -156,8 +158,8 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        var height: CGFloat = 120
         var height: CGFloat = 120
-//        let cell = tableView.cellForRow(at: indexPath) as! ThreeStationsScheduleCell
         guard let isTwoStages = isTwoStages else {
             return height
         }
@@ -165,7 +167,7 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource{
             if isTwoStages{
                 height = height + popCellHeight
             }else{
-                height = height + popCellHeight/2 + 10//10為上面的公車和下面的公車的padding
+                height = height + popCellHeight/2 + 20//iphine版行為+10為上面的公車和下面的公車的padding
             }
         }else{
             height = 120
@@ -174,7 +176,6 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as? ThreeStationsScheduleCell
         if indexPath == selectedCellIndexPath{
             selectedCellIndexPath = IndexPath()
         }else{
