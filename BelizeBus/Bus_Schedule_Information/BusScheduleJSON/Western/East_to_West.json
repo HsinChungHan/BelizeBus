@@ -1,6 +1,6 @@
 [
   {
-    "Company Name": "Shaw Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "",
     "Belmopan": "5:30",
@@ -9,7 +9,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "",
     "Belmopan": "5:45",
@@ -72,7 +72,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Leon Enriquez",
+    "Company Name": "Leon",
     "RSP Type": "Regular",
     "Belize City": "6:15",
     "Belmopan": "7:15",
@@ -207,7 +207,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "J & J Bus Line",
+    "Company Name": "J & J",
     "RSP Type": "Regular",
     "Belize City": "12:15",
     "Belmopan": "13:45",
@@ -216,7 +216,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "J & J Bus Line",
+    "Company Name": "J & J",
     "RSP Type": "Regular",
     "Belize City": "12:45",
     "Belmopan": "14:00",
@@ -225,7 +225,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Silva's Bus Line",
+    "Company Name": "Silva",
     "RSP Type": "Regular",
     "Belize City": "12:45",
     "Belmopan": "14:15",
@@ -234,7 +234,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Belize City": "13:15",
     "Belmopan": "14:45",
@@ -243,7 +243,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Belize City": "13:45",
     "Belmopan": "15:15",
@@ -252,7 +252,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Express",
     "Belize City": "13:45",
     "Belmopan": "15:00",
@@ -261,7 +261,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Belize City": "14:15",
     "Belmopan": "15:45",
@@ -270,7 +270,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Express",
     "Belize City": "14:45",
     "Belmopan": "16:00",
@@ -279,7 +279,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Belize City": "14:45",
     "Belmopan": "16:15",
@@ -378,7 +378,7 @@
     "Days of Operation": "MonFri"
   },
   {
-    "Company Name": "Maria Rodriguez",
+    "Company Name": "Maria",
     "RSP Type": "Workers",
     "Belize City": "17:05",
     "Belmopan": "18:35",
@@ -423,7 +423,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Silva's Bus Line",
+    "Company Name": "Silva",
     "RSP Type": "Express",
     "Belize City": "18:20",
     "Belmopan": "19:30",
@@ -441,7 +441,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "18:45",
     "Belmopan": "20:15",
@@ -450,7 +450,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Express",
     "Belize City": "18:45",
     "Belmopan": "20:00",
@@ -459,7 +459,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "19:15",
     "Belmopan": "20:45",
@@ -468,7 +468,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "19:45",
     "Belmopan": "21:15",
@@ -477,7 +477,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "20:15",
     "Belmopan": "21:45",
@@ -486,7 +486,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Belize City": "20:45",
     "Belmopan": "22:15",

@@ -32,8 +32,10 @@ class PickerViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupView()
         setupNaviStyle()
+        
     }
     
 }

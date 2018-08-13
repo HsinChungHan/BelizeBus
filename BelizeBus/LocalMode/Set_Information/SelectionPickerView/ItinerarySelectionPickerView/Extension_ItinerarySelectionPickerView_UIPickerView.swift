@@ -13,30 +13,19 @@ extension ItinerarySelectionPickerView: UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        guard let busStaions = busStations else {
-            return 0
-        }
-        return busStaions.count
+
+        return busStations.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        guard let busStaions = busStations else {
-            return nil
-        }
-        return busStaions[row]
+        return busStations[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        guard let busStaions = busStations else {return}
-        
         if component == 0{
-            startStation = busStaions[row]
-            indexOfStartStation = row
+            startStation = busStations[row]
         }else{
-            endStation = busStaions[row]
-            indexOfEndStation = row
+            endStation = busStations[row]
         }
-        
-        
     }
 }

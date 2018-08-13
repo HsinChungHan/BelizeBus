@@ -46,7 +46,33 @@ extension UIColor{
     static let appleGreen = UIColor.rgb(red: 1, green: 209, blue: 193)
     static let darkOrange = UIColor.rgb(red: 255, green: 140, blue: 0)
     static let lightBlackColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
-
+    static let systemBlue = UIColor.rgb(red: 21, green: 126, blue: 251)
+    static let grayBarColor = UIColor.rgb(red: 178, green: 178, blue: 178)
+    static let grayBackgroundColor = UIColor.rgb(red: 210, green: 210, blue: 210)
+    static let downOrange = UIColor.rgb(red: 247, green: 174, blue: 174)
+    static let upOrange = UIColor.rgb(red: 247, green: 92, blue: 92)
+    static let textOrange = UIColor.rgb(red: 247, green: 68, blue: 68)
+    static let buttonUpGray = UIColor.rgb(red: 170, green: 170, blue: 170)
+    
+    static let backgroundRiceColor = UIColor.rgb(red: 254, green: 242, blue: 219)
+    
+    static let textBrownColor = UIColor.rgb(red: 157, green: 117, blue: 107)
+    
+    static let buttonDownGradientColor = UIColor.rgb(red: 188, green: 154, blue: 106)
+    
+    static let buttonUpGradientColor = UIColor.rgb(red: 249, green: 227, blue: 190)
+    
+    static let bigButtonDownGradientColor = UIColor.rgb(red: 181, green: 143, blue: 132)
+    
+    static let bigButtonUpGradientColor = UIColor.rgb(red: 213, green: 178, blue: 166)
+    
+    
+    
+    
+    
+    
+    
+    
     
     static let classicDarkBlack = UIColor.hex(hex: "#040C0E")
     static let classicDarkGreen = UIColor.hex(hex: "#132226")

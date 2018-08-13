@@ -38,4 +38,41 @@ struct AllBusStation {
         ]
     }
     
+    
+    static func allStations() -> [String]{
+        return[
+            WesternBusStations.benqueViejo.rawValue,
+            NorthenBusStations.belizeCity.rawValue,
+            WesternBusStations.belmopan.rawValue,
+             NorthenBusStations.burrellBoomJunction.rawValue,
+            NorthenBusStations.corozal.rawValue,
+            SouthernBusStations.dangriga.rawValue,
+            SouthernBusStations.independence.rawValue,
+             NorthenBusStations.orangeWalk.rawValue,
+            SouthernBusStations.placencia.rawValue,
+            SouthernBusStations.puntaGorda.rawValue,
+            WesternBusStations.sanIgnacioTown.rawValue,
+            NorthenBusStations.santaElenaBorder.rawValue,
+        ]
+    }
+    
+    static func checkBusCompanyArray(companyName: String) -> Bool{
+        let imgArray = [
+            BusCompanyImageName.Bus_bboc.rawValue,
+            BusCompanyImageName.Bus_griga.rawValue,
+            BusCompanyImageName.Bus_guerra.rawValue,
+            BusCompanyImageName.Bus_james.rawValue,
+            BusCompanyImageName.Bus_morales.rawValue,
+            BusCompanyImageName.Bus_ritchie.rawValue,
+            BusCompanyImageName.Bus_shaw.rawValue,
+            BusCompanyImageName.Bus_silva.rawValue,
+            BusCompanyImageName.Bus_tillett.rawValue,
+            BusCompanyImageName.Bus_valencia.rawValue,
+            BusCompanyImageName.Bus_westline.rawValue,
+            ]
+        if imgArray.contains(companyName){
+            return true
+        }
+        return false
+    }
 }

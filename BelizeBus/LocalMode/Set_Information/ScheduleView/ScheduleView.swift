@@ -22,6 +22,7 @@ class ScheduleView: BasicView {
     var busStartStation: String?
     var busEndStation: String?
     var busStartHour: Int?
+    var busStartMinute: Int?
     var busStartDay: String?
     var busRoute: String?{
         didSet{

@@ -10,13 +10,7 @@ import Foundation
 
 class NorthernBusSchedule: BusSchedule{
     let belizeCityArriveTime, burrellBoomJunctionArriveTime, orangeWalkArriveTime, corozalArriveTime, santaElenaBorderArriveTime: String
-    let stations = [
-        NorthenBusStations.belizeCity.rawValue,
-        NorthenBusStations.burrellBoomJunction.rawValue,
-        NorthenBusStations.orangeWalk.rawValue,
-        NorthenBusStations.corozal.rawValue,
-        NorthenBusStations.santaElenaBorder.rawValue,
-        ]
+    
     
     override init(direction: String, dict: [String : Any]) {
         self.belizeCityArriveTime = dict[NorthenBusStations.belizeCity.rawValue] as? String ?? ""
@@ -30,33 +24,47 @@ class NorthernBusSchedule: BusSchedule{
     override func fetchValue(index: String) -> String?{
         switch index {
         case NorthenBusStations.belizeCity.rawValue:
-            return self.belizeCityArriveTime
+            return belizeCityArriveTime
         case NorthenBusStations.burrellBoomJunction.rawValue:
-            return self.burrellBoomJunctionArriveTime
+            return burrellBoomJunctionArriveTime
         case NorthenBusStations.orangeWalk.rawValue:
-            return self.orangeWalkArriveTime
+            return orangeWalkArriveTime
         case NorthenBusStations.corozal.rawValue:
-            return self.corozalArriveTime
+            return corozalArriveTime
         case NorthenBusStations.santaElenaBorder.rawValue:
-            return self.santaElenaBorderArriveTime
+            return santaElenaBorderArriveTime
         default:
             return nil
         }
     }
     
-    static func setNorthStations() -> [String]{
-        return [
-            NorthenBusStations.belizeCity.rawValue,
-            NorthenBusStations.burrellBoomJunction.rawValue,
-            NorthenBusStations.orangeWalk.rawValue,
-            NorthenBusStations.corozal.rawValue,
-            NorthenBusStations.santaElenaBorder.rawValue,
-            NorthenBusStations.belizeCity.rawValue,
-            NorthenBusStations.burrellBoomJunction.rawValue,
-            NorthenBusStations.orangeWalk.rawValue,
-            NorthenBusStations.corozal.rawValue,
-            NorthenBusStations.santaElenaBorder.rawValue,
+    override func fetchFinalBusStation() -> String {
+        var finalStation = String()
+        //此順序是East_to_North
+        var busStationAndArriveTimes = [
+            (NorthenBusStations.belizeCity.rawValue, belizeCityArriveTime),
+            (NorthenBusStations.burrellBoomJunction.rawValue, burrellBoomJunctionArriveTime),
+            (NorthenBusStations.orangeWalk.rawValue, orangeWalkArriveTime),
+            (NorthenBusStations.corozal.rawValue, corozalArriveTime),
+            (NorthenBusStations.santaElenaBorder.rawValue, santaElenaBorderArriveTime),
         ]
+        if direction == NorthRouteContent.East_to_North.rawValue{
+            //此順序是East_to_North
+            for (station, time) in busStationAndArriveTimes{
+                if !time.isEmpty{
+                    finalStation = station
+                }
+            }
+        }else{
+            //此順序是North_to_East
+            busStationAndArriveTimes.reverse()
+            for (station, time) in busStationAndArriveTimes{
+                if !time.isEmpty{
+                    finalStation = station
+                }
+            }
+        }
+        return finalStation
     }
 }
 

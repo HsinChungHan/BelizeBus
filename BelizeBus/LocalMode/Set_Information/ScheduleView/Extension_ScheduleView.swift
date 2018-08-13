@@ -47,7 +47,7 @@ extension ScheduleView{
     }
     
     func setupBlackView() {
-        self.addSubview(blackView)
+        self.insertSubview(blackView, belowSubview: outboundSelectionPickerView)
         blackView.fullAnchor(superView: self)
     }
     
@@ -55,5 +55,7 @@ extension ScheduleView{
         UIView.animate(withDuration: 1.5, delay: 0.25, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {[weak self] in
             self?.blackView.alpha = 0
         })
+        
+        
     }
 }

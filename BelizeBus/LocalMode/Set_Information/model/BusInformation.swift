@@ -8,24 +8,22 @@
 
 import Foundation
 import UIKit
-enum BusStationConstant: String {
-    case busRoute = "busRoute"
-    case startStation = "startStation"
-    case endStation = "endStation"
-    case day = "day"
-    case hour = "hour"
-}
+
 
 
 struct BusInformation {
-    var busRoute, startStation, endStation, day: String
-    var hour: Int
+    var busRoute: String
+    var startStation, endStation, day: String
+    var hour: Int, minute: Int
     
-    init(busRoute: String, startStation: String, endStation: String, day: String, hour: Int){
+    
+    init(busRoute: String, startStation: String, endStation: String, day: String, hour: Int, minute: Int){
         self.busRoute = busRoute
         self.startStation = startStation
         self.endStation = endStation
         self.day = day
         self.hour = hour
+        self.minute = minute
     }
+    
 }

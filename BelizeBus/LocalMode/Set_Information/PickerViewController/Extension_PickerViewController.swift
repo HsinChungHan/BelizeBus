@@ -10,6 +10,33 @@ import Foundation
 import UIKit
 
 extension PickerViewController{
+    func setupView() {
+        view.addSubview(scheduleView)
+        scheduleView.fullAnchor(superView: view)
+    }
+    
+    
+    func doneButtonItemDisabled() {
+        rightBarButtonItem = UIBarButtonItem(title: NaviItemLabelText.DoneItem.rawValue , style: .plain, target: self, action: #selector(handleDoneItem))
+        rightBarButtonItem?.setTitleTextAttributes(
+            [
+                NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: DoneBtnStyle.Disable.set.size),
+                NSAttributedStringKey.foregroundColor: DoneBtnStyle.Disable.set.color
+            ]
+            , for: .normal )
+        rightBarButtonItem?.isEnabled = DoneBtnStyle.Disable.set.isUserInteract
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    func setupNaviStyle() {
+        navigationItem.title = NaviTitle.SetInformation.rawValue
+        
+        //設定bar的背景顏色
+        navigationController?.navigationBar.barTintColor = UIColor.classicDarkGreen
+        doneButtonItemDisabled()
+    }
+    
+    //MARK: - Fetch Schedule 
     func fetchBustRoute(){
         guard let busRoute = scheduleView.busRoute else {
             return
@@ -36,6 +63,8 @@ extension PickerViewController{
         let endStation = busInformation.endStation
         let day = busInformation.day
         let hour = String(busInformation.hour)
+        let minute = String(busInformation.minute)
+        
         var northernSchedules = [NorthernBusSchedule]()
         var westernSchedules = [WesternBusSchedule]()
         var southernSchedules = [SouthernBusSchedule]()
@@ -71,7 +100,7 @@ extension PickerViewController{
         
         if !northernSchedules.isEmpty{
             for (index, item) in northernSchedules.enumerated(){
-                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour){
+                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour, minute: minute){
                     print("northernSchedules")
                     print(item.fetchValue(index: startStation))
                     print(item.fetchValue(index: endStation))
@@ -81,7 +110,7 @@ extension PickerViewController{
             }
         }else if !southernSchedules.isEmpty{
             for (index, item) in southernSchedules.enumerated(){
-                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour){
+                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour, minute: minute){
                     print("southernSchedules")
                     print(item.fetchValue(index: startStation))
                     print(item.fetchValue(index: endStation))
@@ -91,7 +120,7 @@ extension PickerViewController{
             }
         }else if !westernSchedules.isEmpty{
             for (index, item) in westernSchedules.enumerated(){
-                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour){
+                if item.fetchSchedule(startStation: startStation, endStation: endStation, day: day, hour: hour, minute: minute){
                     print("westernSchedules")
                     print(item.fetchValue(index: startStation))
                     print(item.fetchValue(index: endStation))
@@ -103,31 +132,7 @@ extension PickerViewController{
         
     }
     
-    func setupView() {
-        view.addSubview(scheduleView)
-        scheduleView.fullAnchor(superView: view)
-    }
     
-    
-    func doneButtonItemDisabled() {
-        rightBarButtonItem = UIBarButtonItem(title: NaviItemLabelText.DoneItem.rawValue , style: .plain, target: self, action: #selector(handleDoneItem))
-        rightBarButtonItem?.setTitleTextAttributes(
-            [
-                NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: DoneBtnStyle.Disable.set.size),
-                NSAttributedStringKey.foregroundColor: DoneBtnStyle.Disable.set.color
-            ]
-            , for: .normal )
-        rightBarButtonItem?.isEnabled = DoneBtnStyle.Disable.set.isUserInteract
-        navigationItem.rightBarButtonItem = rightBarButtonItem
-    }
-    
-    func setupNaviStyle() {
-        navigationItem.title = NaviTitle.SetInformation.rawValue
-        
-        //設定bar的背景顏色
-        navigationController?.navigationBar.barTintColor = UIColor.classicDarkGreen
-        doneButtonItemDisabled()
-    }
     
     
     
@@ -146,7 +151,7 @@ extension PickerViewController{
         print("endStation: ",endStation)
         print("day: ",day)
         print("hour: ",hour)
-        busInformation = BusInformation.init(busRoute: busRoute, startStation: startStation, endStation: endStation, day: day, hour: hour)
+        busInformation = BusInformation.init(busRoute: busRoute, startStation: startStation, endStation: endStation, day: day, hour: hour, minute: 0)
         
         searchSchedule(busInformation: busInformation!)
         

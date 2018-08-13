@@ -41,9 +41,9 @@ enum DoneBtnStyle{
     var set: (size: CGFloat, color: UIColor, isUserInteract: Bool){
         switch self {
         case .Disable:
-            return (16, UIColor.classicBrown, false)
+            return (18, UIColor.classicBrown, false)
         case .Enable:
-            return (24, UIColor.darkOrange, true)
+            return (18, UIColor.darkOrange, true)
         }
     }
 }
@@ -61,8 +61,10 @@ enum TitleLabelBasicContent: String {
 }
 
 enum SubtilteLabelBasicContent: String{
-    case Itinerary = "Tap to choose stations"
-    case Outbound = "Tap to choose leaving time"
+    case Itinerary = "Choose station"
+    case ChooseStartStation = "Choose start station"
+    case ChooseEndStation = "Choose end station"
+    case Outbound = "Choose leaving time"
 }
 
 enum ViewConstant: CGFloat {
@@ -82,11 +84,14 @@ enum TitleOfLabel: String {
 enum NaviTitle: String{
     case SetInformation = "Set Information"
     case BusSchedule = "Bus Schedule"
+    case IndexTitle = "Search"
+    case ResultTitle = "Result"
 }
 
 enum NaviItemLabelText: String{
     case DoneItem = "Done"
     case DismissItem = "Dismiss"
+    case BackItem = "Back"
 }
 
 enum ButtonLabelText: String{
@@ -102,14 +107,21 @@ enum DaysOperation: String{
     case MonFriConstant = "MonFri"
     case MonSatConstant = "MonSat"
     case MonSunConstant = "MonSun"
-    case MonThurConstant = "MonThur"
-    case MonFri = "MonTueWedThurFri"
-    case MonSat = "MonTueWedThurFriSat"
-    case MonSun = "MonTueWedThurFriSatSun"
-    case MonThur = "MonTueWedThur"
+    case MonThurConstant = "MonThu"
+    case MonFri = "MonTueWedThuFri"
+    case MonSat = "MonTueWedThuFriSat"
+    case MonSun = "MonTueWedThuFriSatSun"
+    case MonThur = "MonTueWedThu"
     case Sun = "Sun"
     case Sat = "Sat"
     
+}
+
+enum DateFormatterConstant: String{
+    case wholeDate = "yyyy/MM/dd, EEE, HH:mm"
+    case day = "EEE"
+    case hour = "HH"
+    case minute = "mm"
 }
 
 enum BusScheduleConstant: String{
@@ -141,4 +153,26 @@ enum SouthernBusStations: String {
     case placencia = "Placencia"
     case independence = "Independence"
     case puntaGorda = "Punta Gorda"
+}
+
+
+enum ArrowAngle: CGFloat{
+    case opened = 0
+    case closed = 180
+}
+
+
+enum BusCompanyImageName: String{
+    case Bus_bboc = "BBOC"
+    case Bus_default = "Default"
+    case Bus_griga = "Griga"
+    case Bus_guerra = "Guerra"
+    case Bus_james = "James"
+    case Bus_morales = "Morales"
+    case Bus_ritchie = "Ritchie"
+    case Bus_shaw = "Shaw"
+    case Bus_silva = "Silva"
+    case Bus_tillett = "Tillett"
+    case Bus_valencia = "Valencia"
+    case Bus_westline = "Westline"
 }

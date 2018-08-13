@@ -9,12 +9,7 @@
 import Foundation
 class WesternBusSchedule: BusSchedule{
     let belizeCityArriveTime, belmopanArriveTime, sanIgnacioTownArriveTime, benqueViejoArriveTime: String
-    let stations = [
-        WesternBusStations.belizeCity.rawValue,
-        WesternBusStations.belmopan.rawValue,
-        WesternBusStations.sanIgnacioTown.rawValue,
-        WesternBusStations.benqueViejo.rawValue,
-        ]
+    
     
     override init(direction: String, dict: [String : Any]) {
         self.belizeCityArriveTime = dict[WesternBusStations.belizeCity.rawValue] as? String ?? ""
@@ -40,17 +35,33 @@ class WesternBusSchedule: BusSchedule{
         }
     }
     
-    static func setWestStations() -> [String]{
-        return [
-            WesternBusStations.belizeCity.rawValue,
-            WesternBusStations.belmopan.rawValue,
-            WesternBusStations.sanIgnacioTown.rawValue,
-            WesternBusStations.benqueViejo.rawValue,
-            WesternBusStations.belizeCity.rawValue,
-            WesternBusStations.belmopan.rawValue,
-            WesternBusStations.sanIgnacioTown.rawValue,
-            WesternBusStations.benqueViejo.rawValue,
-        ]
+    
+    override func fetchFinalBusStation() -> String {
+        var finalStation = String()
+        //此順序是East_to_West
+        var busStationAndArriveTimes = [
+            (WesternBusStations.belizeCity.rawValue, belizeCityArriveTime),
+            (WesternBusStations.belmopan.rawValue, belmopanArriveTime),
+            (WesternBusStations.sanIgnacioTown.rawValue, sanIgnacioTownArriveTime),
+            (WesternBusStations.benqueViejo.rawValue, benqueViejoArriveTime),
+            ]
+        if direction == WestRouteContent.East_to_West.rawValue{
+            //此順序是East_to_West
+            for (station, time) in busStationAndArriveTimes{
+                if !time.isEmpty{
+                    finalStation = station
+                }
+            }
+        }else{
+            //此順序是West_to_East
+            busStationAndArriveTimes.reverse()
+            for (station, time) in busStationAndArriveTimes{
+                if !time.isEmpty{
+                    finalStation = station
+                }
+            }
+        }
+        return finalStation
     }
 }
 

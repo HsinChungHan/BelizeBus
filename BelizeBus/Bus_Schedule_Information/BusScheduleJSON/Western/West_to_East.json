@@ -1,6 +1,6 @@
 [
   {
-    "Company Name": "J & J Bus Line",
+    "Company Name": "J & J",
     "RSP Type": "Regular",
     "Benque Viejo": "2:15",
     "San Ignacio": "2:45",
@@ -9,7 +9,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "J & J Bus Line",
+    "Company Name": "J & J",
     "RSP Type": "Regular",
     "Benque Viejo": "2:45",
     "San Ignacio": "3:15",
@@ -18,7 +18,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Silva's Bus Line",
+    "Company Name": "Silva",
     "RSP Type": "Regular",
     "Benque Viejo": "3:15",
     "San Ignacio": "3:45",
@@ -27,7 +27,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Silva's Bus Line",
+    "Company Name": "Silva",
     "RSP Type": "Express",
     "Benque Viejo": "3:15",
     "San Ignacio": "3:45",
@@ -36,7 +36,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Benque Viejo": "3:30",
     "San Ignacio": "4:00",
@@ -45,7 +45,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Benque Viejo": "4:00",
     "San Ignacio": "4:30",
@@ -54,7 +54,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Express",
     "Benque Viejo": "4:30",
     "San Ignacio": "5:00",
@@ -63,7 +63,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Benque Viejo": "4:30",
     "San Ignacio": "5:00",
@@ -72,7 +72,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Regular",
     "Benque Viejo": "5:00",
     "San Ignacio": "5:30",
@@ -81,7 +81,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Guerra's Bus Line",
+    "Company Name": "Guerra",
     "RSP Type": "Express",
     "Benque Viejo": "5:00",
     "San Ignacio": "5:30",
@@ -225,7 +225,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Benque Viejo": "9:45",
     "San Ignacio": "10:15",
@@ -234,7 +234,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Benque Viejo": "10:15",
     "San Ignacio": "10:45",
@@ -252,7 +252,7 @@
     "Days of Operation": "Fri"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Benque Viejo": "10:45",
     "San Ignacio": "11:15",
@@ -261,7 +261,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Express",
     "Benque Viejo": "11:15",
     "San Ignacio": "11:45",
@@ -270,7 +270,7 @@
     "Days of Operation": ""
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Benque Viejo": "11:15",
     "San Ignacio": "11:45",
@@ -279,7 +279,7 @@
     "Days of Operation": "MonSun"
   },
   {
-    "Company Name": "Shaw's Bus Line",
+    "Company Name": "Shaw",
     "RSP Type": "Regular",
     "Benque Viejo": "11:45",
     "San Ignacio": "12:45",

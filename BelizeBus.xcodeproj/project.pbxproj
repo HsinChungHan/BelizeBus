@@ -14,11 +14,27 @@
 		C013F38A20E1552C00495736 /* SouthernBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F38920E1552C00495736 /* SouthernBusSchedule.swift */; };
 		C040E60920CF10CB00886552 /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040E60820CF10CB00886552 /* ItineraryTableViewCell.swift */; };
 		C049EADF20CEDF040075B049 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049EADE20CEDF040075B049 /* PickerViewController.swift */; };
+		C04B94A521103087005B1CA4 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04B94A421103086005B1CA4 /* StringProtocolExtension.swift */; };
+		C04B94A721103092005B1CA4 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04B94A621103092005B1CA4 /* String_Extension.swift */; };
+		C054238621078101005C1E5C /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054238521078101005C1E5C /* IndexViewController.swift */; };
+		C054238821078EDA005C1E5C /* CAGradientLayer_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054238721078EDA005C1E5C /* CAGradientLayer_Extension.swift */; };
+		C054238A2108FDFE005C1E5C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05423892108FDFE005C1E5C /* ResultViewController.swift */; };
+		C054238C21093622005C1E5C /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054238B21093622005C1E5C /* InformationView.swift */; };
+		C054238E2109434C005C1E5C /* BasicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054238D2109434C005C1E5C /* BasicLabel.swift */; };
 		C059DB2720D039A40070F722 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059DB2620D039A30070F722 /* UIColor_Extension.swift */; };
 		C059DB3A20D0893D0070F722 /* SlideDownTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059DB3920D0893D0070F722 /* SlideDownTransitionAnimator.swift */; };
 		C059DB3C20D10BE40070F722 /* BusRouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059DB3B20D10BE30070F722 /* BusRouteTableViewCell.swift */; };
 		C059DB4520D1745E0070F722 /* SegmentedContolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059DB4420D1745E0070F722 /* SegmentedContolView.swift */; };
 		C05CD74620D9B1B700759024 /* BusInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CD74520D9B1B700759024 /* BusInformation.swift */; };
+		C06EE4B221094A2100D82351 /* BasicTBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4B121094A2100D82351 /* BasicTBCell.swift */; };
+		C06EE4B421094AB600D82351 /* ThreeStationsScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4B321094AB600D82351 /* ThreeStationsScheduleCell.swift */; };
+		C06EE4B621096BD800D82351 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4B521096BD800D82351 /* TimeView.swift */; };
+		C06EE4BA210981CD00D82351 /* BusScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4B9210981CC00D82351 /* BusScheduleView.swift */; };
+		C06EE4BC210A83CA00D82351 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4BB210A83CA00D82351 /* MainTabBarController.swift */; };
+		C06EE4BE210ABB5200D82351 /* SelectedInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4BD210ABB5200D82351 /* SelectedInformationView.swift */; };
+		C06EE4C4210B8BB000D82351 /* OneStageBusInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4C3210B8BB000D82351 /* OneStageBusInformation.swift */; };
+		C06EE4C6210B8CF200D82351 /* TwoStagesBusInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4C5210B8CF200D82351 /* TwoStagesBusInformation.swift */; };
+		C06EE4E8210D338300D82351 /* IndexPageInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EE4E7210D338300D82351 /* IndexPageInformation.swift */; };
 		C07AEBDB20F664A000F8D2ED /* Extension_BusScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AEBDA20F664A000F8D2ED /* Extension_BusScheduleViewController.swift */; };
 		C07AEBDD20F6653900F8D2ED /* Extension_BusScheduleViewController_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AEBDC20F6653900F8D2ED /* Extension_BusScheduleViewController_CollectionView.swift */; };
 		C07AEBE020F6662B00F8D2ED /* Extension_PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AEBDF20F6662B00F8D2ED /* Extension_PickerViewController.swift */; };
@@ -38,18 +54,17 @@
 		C0985B9420F668FD00D3D97F /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9320F668FD00D3D97F /* ScheduleView.swift */; };
 		C0985B9620F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9520F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift */; };
 		C0985B9820F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9720F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift */; };
-		C0A5973920D81CCC00D28E3B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5973820D81CCC00D28E3B /* UILabelExtension.swift */; };
+		C0985B9C20F6717900D3D97F /* LocationBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9B20F6717900D3D97F /* LocationBusSchedule.swift */; };
+		C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */; };
 		C0A5973D20D972B300D28E3B /* NorthernBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5973C20D972B300D28E3B /* NorthernBusSchedule.swift */; };
 		C0A5974120D9956600D28E3B /* BusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5974020D9956600D28E3B /* BusSchedule.swift */; };
 		C0A6B19C20D475320036F41B /* SlideRightTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B19B20D475320036F41B /* SlideRightTransitionAnimator.swift */; };
 		C0A6B19E20D475D40036F41B /* BusScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B19D20D475D40036F41B /* BusScheduleViewController.swift */; };
 		C0A6B1A020D477730036F41B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B19F20D477730036F41B /* Constant.swift */; };
 		C0A6B1A420D47EBB0036F41B /* BusScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B1A320D47EBB0036F41B /* BusScheduleCollectionViewCell.swift */; };
-		C0ADC0A320DA0FA6009C6F73 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC0A220DA0FA6009C6F73 /* StringProtocolExtension.swift */; };
 		C0ADC0A520DAEA5E009C6F73 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC0A420DAEA5E009C6F73 /* UIStackViewExtension.swift */; };
 		C0E404BD20E1557700F2BBE5 /* East_to_West.json in Resources */ = {isa = PBXBuildFile; fileRef = C0E404BC20E1557600F2BBE5 /* East_to_West.json */; };
 		C0E404C220E1568000F2BBE5 /* WesternBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E404C120E1568000F2BBE5 /* WesternBusSchedule.swift */; };
-		C0E404C420E1890900F2BBE5 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E404C320E1890800F2BBE5 /* Schedule.swift */; };
 		C0E404C720E199A900F2BBE5 /* AllBusStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E404C620E199A900F2BBE5 /* AllBusStation.swift */; };
 		C0E404C920E1EC7800F2BBE5 /* North_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C0E404C820E1EC7800F2BBE5 /* North_to_East.json */; };
 		C0E91B7320B5F71800808B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B7220B5F71800808B40 /* AppDelegate.swift */; };
@@ -61,7 +76,6 @@
 		C0E91B9720B6036900808B40 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B8F20B6036900808B40 /* UIViewControllerExtension.swift */; };
 		C0E91B9820B6036900808B40 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9020B6036900808B40 /* BasicView.swift */; };
 		C0E91B9920B6036900808B40 /* LOTAnimationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9120B6036900808B40 /* LOTAnimationViewExtension.swift */; };
-		C0E91B9A20B6036900808B40 /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9220B6036900808B40 /* TimerExtension.swift */; };
 		C0E91B9B20B6036900808B40 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9320B6036900808B40 /* BasicCell.swift */; };
 		C0E91B9C20B6036900808B40 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9420B6036900808B40 /* UIViewExtension.swift */; };
 		C0E91B9D20B6036900808B40 /* UIApplictionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B9520B6036900808B40 /* UIApplictionExtension.swift */; };
@@ -78,11 +92,27 @@
 		C013F38920E1552C00495736 /* SouthernBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthernBusSchedule.swift; sourceTree = "<group>"; };
 		C040E60820CF10CB00886552 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryTableViewCell.swift; sourceTree = "<group>"; };
 		C049EADE20CEDF040075B049 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		C04B94A421103086005B1CA4 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
+		C04B94A621103092005B1CA4 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		C054238521078101005C1E5C /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		C054238721078EDA005C1E5C /* CAGradientLayer_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayer_Extension.swift; sourceTree = "<group>"; };
+		C05423892108FDFE005C1E5C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C054238B21093622005C1E5C /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		C054238D2109434C005C1E5C /* BasicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLabel.swift; sourceTree = "<group>"; };
 		C059DB2620D039A30070F722 /* UIColor_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		C059DB3920D0893D0070F722 /* SlideDownTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownTransitionAnimator.swift; sourceTree = "<group>"; };
 		C059DB3B20D10BE30070F722 /* BusRouteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteTableViewCell.swift; sourceTree = "<group>"; };
 		C059DB4420D1745E0070F722 /* SegmentedContolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedContolView.swift; sourceTree = "<group>"; };
 		C05CD74520D9B1B700759024 /* BusInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusInformation.swift; sourceTree = "<group>"; };
+		C06EE4B121094A2100D82351 /* BasicTBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTBCell.swift; sourceTree = "<group>"; };
+		C06EE4B321094AB600D82351 /* ThreeStationsScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeStationsScheduleCell.swift; sourceTree = "<group>"; };
+		C06EE4B521096BD800D82351 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		C06EE4B9210981CC00D82351 /* BusScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusScheduleView.swift; sourceTree = "<group>"; };
+		C06EE4BB210A83CA00D82351 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C06EE4BD210ABB5200D82351 /* SelectedInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedInformationView.swift; sourceTree = "<group>"; };
+		C06EE4C3210B8BB000D82351 /* OneStageBusInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneStageBusInformation.swift; sourceTree = "<group>"; };
+		C06EE4C5210B8CF200D82351 /* TwoStagesBusInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStagesBusInformation.swift; sourceTree = "<group>"; };
+		C06EE4E7210D338300D82351 /* IndexPageInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPageInformation.swift; sourceTree = "<group>"; };
 		C07AEBDA20F664A000F8D2ED /* Extension_BusScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_BusScheduleViewController.swift; sourceTree = "<group>"; };
 		C07AEBDC20F6653900F8D2ED /* Extension_BusScheduleViewController_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_BusScheduleViewController_CollectionView.swift; sourceTree = "<group>"; };
 		C07AEBDF20F6662B00F8D2ED /* Extension_PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_PickerViewController.swift; sourceTree = "<group>"; };
@@ -102,18 +132,17 @@
 		C0985B9320F668FD00D3D97F /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		C0985B9520F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ItinerarySelectionPickerView.swift; sourceTree = "<group>"; };
 		C0985B9720F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ItinerarySelectionPickerView_UIPickerView.swift; sourceTree = "<group>"; };
-		C0A5973820D81CCC00D28E3B /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		C0985B9B20F6717900D3D97F /* LocationBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBusSchedule.swift; sourceTree = "<group>"; };
+		C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSchedulesAlgorithm.swift; sourceTree = "<group>"; };
 		C0A5973C20D972B300D28E3B /* NorthernBusSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthernBusSchedule.swift; sourceTree = "<group>"; };
 		C0A5974020D9956600D28E3B /* BusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSchedule.swift; sourceTree = "<group>"; };
 		C0A6B19B20D475320036F41B /* SlideRightTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRightTransitionAnimator.swift; sourceTree = "<group>"; };
 		C0A6B19D20D475D40036F41B /* BusScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusScheduleViewController.swift; sourceTree = "<group>"; };
 		C0A6B19F20D477730036F41B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C0A6B1A320D47EBB0036F41B /* BusScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
-		C0ADC0A220DA0FA6009C6F73 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
 		C0ADC0A420DAEA5E009C6F73 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		C0E404BC20E1557600F2BBE5 /* East_to_West.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_West.json; sourceTree = "<group>"; };
 		C0E404C120E1568000F2BBE5 /* WesternBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternBusSchedule.swift; sourceTree = "<group>"; };
-		C0E404C320E1890800F2BBE5 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		C0E404C620E199A900F2BBE5 /* AllBusStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBusStation.swift; sourceTree = "<group>"; };
 		C0E404C820E1EC7800F2BBE5 /* North_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = North_to_East.json; sourceTree = "<group>"; };
 		C0E91B6F20B5F71800808B40 /* BelizeBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelizeBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +156,6 @@
 		C0E91B8F20B6036900808B40 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		C0E91B9020B6036900808B40 /* BasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		C0E91B9120B6036900808B40 /* LOTAnimationViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOTAnimationViewExtension.swift; sourceTree = "<group>"; };
-		C0E91B9220B6036900808B40 /* TimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerExtension.swift; sourceTree = "<group>"; };
 		C0E91B9320B6036900808B40 /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		C0E91B9420B6036900808B40 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0E91B9520B6036900808B40 /* UIApplictionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplictionExtension.swift; sourceTree = "<group>"; };
@@ -175,6 +203,14 @@
 			children = (
 				C0A6B1A120D47B4C0036F41B /* Set_Information */,
 				C0A6B1A220D47B710036F41B /* Bus_Schedule */,
+				C06EE4BB210A83CA00D82351 /* MainTabBarController.swift */,
+				C054238521078101005C1E5C /* IndexViewController.swift */,
+				C06EE4BD210ABB5200D82351 /* SelectedInformationView.swift */,
+				C05423892108FDFE005C1E5C /* ResultViewController.swift */,
+				C054238B21093622005C1E5C /* InformationView.swift */,
+				C06EE4B321094AB600D82351 /* ThreeStationsScheduleCell.swift */,
+				C06EE4B521096BD800D82351 /* TimeView.swift */,
+				C06EE4B9210981CC00D82351 /* BusScheduleView.swift */,
 			);
 			path = LocalMode;
 			sourceTree = "<group>";
@@ -194,10 +230,11 @@
 			isa = PBXGroup;
 			children = (
 				C0A5974020D9956600D28E3B /* BusSchedule.swift */,
-				C0E404C620E199A900F2BBE5 /* AllBusStation.swift */,
 				C0A5973C20D972B300D28E3B /* NorthernBusSchedule.swift */,
 				C013F38920E1552C00495736 /* SouthernBusSchedule.swift */,
 				C0E404C120E1568000F2BBE5 /* WesternBusSchedule.swift */,
+				C0985B9B20F6717900D3D97F /* LocationBusSchedule.swift */,
+				C0E404C620E199A900F2BBE5 /* AllBusStation.swift */,
 				C013F38B20E1553E00495736 /* BusScheduleJSON */,
 			);
 			path = Bus_Schedule_Information;
@@ -282,14 +319,14 @@
 			path = ItinerarySelectionPickerView;
 			sourceTree = "<group>";
 		};
-		C0985B9A20F66A3F00D3D97F /* PickerView */ = {
+		C0985B9A20F66A3F00D3D97F /* SelectionPickerView */ = {
 			isa = PBXGroup;
 			children = (
 				C080730720D1990F0026DDAB /* OutboundSelectionPickerView.swift */,
 				C0985B9920F66A1B00D3D97F /* ItinerarySelectionPickerView */,
 				C059DB4320D170010070F722 /* Cell */,
 			);
-			path = PickerView;
+			path = SelectionPickerView;
 			sourceTree = "<group>";
 		};
 		C0A6B1A120D47B4C0036F41B /* Set_Information */ = {
@@ -298,7 +335,7 @@
 				C0E404C520E1890E00F2BBE5 /* model */,
 				C07AEBF220F6685800F8D2ED /* ScheduleView */,
 				C07AEBE720F6672800F8D2ED /* PickerViewController */,
-				C0985B9A20F66A3F00D3D97F /* PickerView */,
+				C0985B9A20F66A3F00D3D97F /* SelectionPickerView */,
 			);
 			path = Set_Information;
 			sourceTree = "<group>";
@@ -343,7 +380,9 @@
 			isa = PBXGroup;
 			children = (
 				C05CD74520D9B1B700759024 /* BusInformation.swift */,
-				C0E404C320E1890800F2BBE5 /* Schedule.swift */,
+				C06EE4E7210D338300D82351 /* IndexPageInformation.swift */,
+				C06EE4C3210B8BB000D82351 /* OneStageBusInformation.swift */,
+				C06EE4C5210B8CF200D82351 /* TwoStagesBusInformation.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -368,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E91B7220B5F71800808B40 /* AppDelegate.swift */,
+				C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */,
 				C059DB3F20D16FA80070F722 /* LocalMode */,
 				C040E60320CEE79C00886552 /* Map */,
 				C062191120CC2D6D005C6A35 /* Bus_Schedule_Information */,
@@ -383,19 +423,21 @@
 			isa = PBXGroup;
 			children = (
 				C0E91B9320B6036900808B40 /* BasicCell.swift */,
+				C06EE4B121094A2100D82351 /* BasicTBCell.swift */,
 				C0E91B9020B6036900808B40 /* BasicView.swift */,
 				C0E91B9120B6036900808B40 /* LOTAnimationViewExtension.swift */,
-				C0E91B9220B6036900808B40 /* TimerExtension.swift */,
 				C0E91B9520B6036900808B40 /* UIApplictionExtension.swift */,
 				C059DB2620D039A30070F722 /* UIColor_Extension.swift */,
 				C0E91B8F20B6036900808B40 /* UIViewControllerExtension.swift */,
 				C0E91B9420B6036900808B40 /* UIViewExtension.swift */,
 				C0A6B19B20D475320036F41B /* SlideRightTransitionAnimator.swift */,
 				C059DB3920D0893D0070F722 /* SlideDownTransitionAnimator.swift */,
-				C0A5973820D81CCC00D28E3B /* UILabelExtension.swift */,
+				C04B94A421103086005B1CA4 /* StringProtocolExtension.swift */,
 				C0A6B19F20D477730036F41B /* Constant.swift */,
-				C0ADC0A220DA0FA6009C6F73 /* StringProtocolExtension.swift */,
 				C0ADC0A420DAEA5E009C6F73 /* UIStackViewExtension.swift */,
+				C054238721078EDA005C1E5C /* CAGradientLayer_Extension.swift */,
+				C04B94A621103092005B1CA4 /* String_Extension.swift */,
+				C054238D2109434C005C1E5C /* BasicLabel.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -476,57 +518,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04B94A721103092005B1CA4 /* String_Extension.swift in Sources */,
 				C0A6B19E20D475D40036F41B /* BusScheduleViewController.swift in Sources */,
 				C0E91BA420B76ED500808B40 /* CustomPinAnnotationView.swift in Sources */,
 				C080730220D18E520026DDAB /* OutboundTableViewCell.swift in Sources */,
 				C0E91B9B20B6036900808B40 /* BasicCell.swift in Sources */,
+				C04B94A521103087005B1CA4 /* StringProtocolExtension.swift in Sources */,
 				C07AEBED20F667F600F8D2ED /* Extension_ScheduleView_SetDateLabelDelegate.swift in Sources */,
 				C013F38A20E1552C00495736 /* SouthernBusSchedule.swift in Sources */,
 				C07AEBE020F6662B00F8D2ED /* Extension_PickerViewController.swift in Sources */,
 				C059DB3C20D10BE40070F722 /* BusRouteTableViewCell.swift in Sources */,
 				C059DB3A20D0893D0070F722 /* SlideDownTransitionAnimator.swift in Sources */,
 				C0985B9620F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift in Sources */,
+				C06EE4BC210A83CA00D82351 /* MainTabBarController.swift in Sources */,
 				C0E91B9820B6036900808B40 /* BasicView.swift in Sources */,
 				C0E91B9C20B6036900808B40 /* UIViewExtension.swift in Sources */,
 				C0A5973D20D972B300D28E3B /* NorthernBusSchedule.swift in Sources */,
 				C0A6B1A420D47EBB0036F41B /* BusScheduleCollectionViewCell.swift in Sources */,
 				C0E91B9920B6036900808B40 /* LOTAnimationViewExtension.swift in Sources */,
 				C0985B9820F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift in Sources */,
+				C054238C21093622005C1E5C /* InformationView.swift in Sources */,
 				C07AEBEF20F6681D00F8D2ED /* Extension_ScheduleView_SetItineraryLabelDelegate.swift in Sources */,
+				C06EE4C4210B8BB000D82351 /* OneStageBusInformation.swift in Sources */,
 				C080730820D1990F0026DDAB /* OutboundSelectionPickerView.swift in Sources */,
-				C0A5973920D81CCC00D28E3B /* UILabelExtension.swift in Sources */,
+				C054238621078101005C1E5C /* IndexViewController.swift in Sources */,
 				C08072FE20D18D0C0026DDAB /* BasicTableViewCell.swift in Sources */,
+				C0985B9C20F6717900D3D97F /* LocationBusSchedule.swift in Sources */,
 				C07AEBF120F6684100F8D2ED /* Extension_ScheduleView_ChangeBusRouteProtocol.swift in Sources */,
 				C080730620D196F90026DDAB /* BasicSelectionPickerView.swift in Sources */,
 				C0E91BA620B772B300808B40 /* CustomPinAnnotation.swift in Sources */,
 				C07AEBE920F6677F00F8D2ED /* Extension_ScheduleView.swift in Sources */,
 				C0E91B8520B5F87600808B40 /* MapViewController.swift in Sources */,
 				C0E91B7320B5F71800808B40 /* AppDelegate.swift in Sources */,
+				C06EE4E8210D338300D82351 /* IndexPageInformation.swift in Sources */,
 				C0A6B1A020D477730036F41B /* Constant.swift in Sources */,
 				C07AEBEB20F667C400F8D2ED /* Extension_ScheduleView_UITableView.swift in Sources */,
 				C0E91B9720B6036900808B40 /* UIViewControllerExtension.swift in Sources */,
-				C0E91B9A20B6036900808B40 /* TimerExtension.swift in Sources */,
+				C054238A2108FDFE005C1E5C /* ResultViewController.swift in Sources */,
 				C07AEBE220F6668600F8D2ED /* Extension_PickerViewController_DecideDoneBtnStateDlegate.swift in Sources */,
-				C0ADC0A320DA0FA6009C6F73 /* StringProtocolExtension.swift in Sources */,
-				C0E404C420E1890900F2BBE5 /* Schedule.swift in Sources */,
 				C0A6B19C20D475320036F41B /* SlideRightTransitionAnimator.swift in Sources */,
+				C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift in Sources */,
 				C0E91B9D20B6036900808B40 /* UIApplictionExtension.swift in Sources */,
 				C0E404C220E1568000F2BBE5 /* WesternBusSchedule.swift in Sources */,
+				C054238821078EDA005C1E5C /* CAGradientLayer_Extension.swift in Sources */,
 				C07AEBE620F666DF00F8D2ED /* Extension_PickerViewController_FetchFinalBusRouteDelegate.swift in Sources */,
 				C0ADC0A520DAEA5E009C6F73 /* UIStackViewExtension.swift in Sources */,
 				C0985B9420F668FD00D3D97F /* ScheduleView.swift in Sources */,
+				C06EE4B221094A2100D82351 /* BasicTBCell.swift in Sources */,
+				C06EE4B621096BD800D82351 /* TimeView.swift in Sources */,
+				C06EE4C6210B8CF200D82351 /* TwoStagesBusInformation.swift in Sources */,
 				C07AEBE420F666B200F8D2ED /* Extension_PickerViewController_FetchBusRouteDelegate.swift in Sources */,
+				C06EE4BE210ABB5200D82351 /* SelectedInformationView.swift in Sources */,
 				C0E91BA220B7696900808B40 /* CustomPinView.swift in Sources */,
 				C0E91B8B20B5F9EA00808B40 /* MapViewController+MapViewDelegate.swift in Sources */,
 				C05CD74620D9B1B700759024 /* BusInformation.swift in Sources */,
+				C054238E2109434C005C1E5C /* BasicLabel.swift in Sources */,
 				C059DB2720D039A40070F722 /* UIColor_Extension.swift in Sources */,
 				C0E91B8D20B5FAD100808B40 /* BusStation.swift in Sources */,
 				C07AEBDB20F664A000F8D2ED /* Extension_BusScheduleViewController.swift in Sources */,
+				C06EE4BA210981CD00D82351 /* BusScheduleView.swift in Sources */,
 				C040E60920CF10CB00886552 /* ItineraryTableViewCell.swift in Sources */,
 				C0E404C720E199A900F2BBE5 /* AllBusStation.swift in Sources */,
 				C07AEBDD20F6653900F8D2ED /* Extension_BusScheduleViewController_CollectionView.swift in Sources */,
 				C049EADF20CEDF040075B049 /* PickerViewController.swift in Sources */,
 				C059DB4520D1745E0070F722 /* SegmentedContolView.swift in Sources */,
+				C06EE4B421094AB600D82351 /* ThreeStationsScheduleCell.swift in Sources */,
 				C0A5974120D9956600D28E3B /* BusSchedule.swift in Sources */,
 				C080730420D1901A0026DDAB /* ItinerarySelectionPickerView.swift in Sources */,
 			);
@@ -664,9 +720,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAGW44Z6JC;
 				INFOPLIST_FILE = BelizeBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,7 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.BelizeBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -682,9 +740,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAGW44Z6JC;
 				INFOPLIST_FILE = BelizeBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,7 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.BelizeBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

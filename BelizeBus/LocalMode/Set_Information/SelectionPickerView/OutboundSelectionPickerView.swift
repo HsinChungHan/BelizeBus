@@ -8,15 +8,11 @@
 
 import UIKit
 import Foundation
-enum DateFormatterConstant: String{
-    case wholeDate = "yyyy/MM/dd, EEE, HH:mm"
-    case day = "EEE"
-    case hour = "HH"
-}
+
 
 
 protocol SetDateLabelDelegate {
-    func setDateLabel(date: String, day: String, hour: String)
+    func setDateLabel(date: String, day: String, hour: String, minute: String)
 }
 
 
@@ -24,7 +20,9 @@ class OutboundSelectionPickerView: BasicSelectionPickerView {
     var delegate: SetDateLabelDelegate?
     var day: String?
     var hour: String?
+    var minute: String?
     var wholeDate: String?
+    var isSlidedUp = false
     
     lazy var datePicker: UIDatePicker = {
        let dp = UIDatePicker()
@@ -55,6 +53,7 @@ class OutboundSelectionPickerView: BasicSelectionPickerView {
         wholeDate = fetchTime(formatter: DateFormatterConstant.wholeDate.rawValue)
         day = fetchTime(formatter: DateFormatterConstant.day.rawValue)
         hour = fetchTime(formatter: DateFormatterConstant.hour.rawValue)
+        minute = fetchTime(formatter: DateFormatterConstant.minute.rawValue)
     }
     
     func fetchTime(formatter: String) -> String? {
@@ -66,6 +65,8 @@ class OutboundSelectionPickerView: BasicSelectionPickerView {
             dateFormatter.dateFormat = DateFormatterConstant.day.rawValue
         case DateFormatterConstant.hour.rawValue:
             dateFormatter.dateFormat = DateFormatterConstant.hour.rawValue
+        case DateFormatterConstant.minute.rawValue:
+            dateFormatter.dateFormat = DateFormatterConstant.minute.rawValue
         default:
             return nil
         }
@@ -81,13 +82,14 @@ class OutboundSelectionPickerView: BasicSelectionPickerView {
         wholeDate = fetchTime(formatter: DateFormatterConstant.wholeDate.rawValue)
         day = fetchTime(formatter: DateFormatterConstant.day.rawValue)
         hour = fetchTime(formatter: DateFormatterConstant.hour.rawValue)
+        minute = fetchTime(formatter: DateFormatterConstant.minute.rawValue)
     }
     
     @objc func dismissSelectionPickerView(){
-        guard let wholeDate = wholeDate, let day = day, let hour = hour else {
+        guard let wholeDate = wholeDate, let day = day, let hour = hour, let minute = minute else {
             return
         }
-        delegate?.setDateLabel(date: wholeDate, day: day, hour: hour)
+        delegate?.setDateLabel(date: wholeDate, day: day, hour: hour, minute: minute)
         
         let transform = CGAffineTransform(translationX: 0, y: ViewConstant.SelectionPickerViewHeight.rawValue)
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: [], animations: {

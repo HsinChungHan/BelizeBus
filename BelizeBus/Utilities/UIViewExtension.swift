@@ -55,9 +55,12 @@ extension UIView{
         }
     }
     
-    func rotateAnimation(angle: CGFloat, completion: @escaping ()->()) {
-        let rotateTransform = CGAffineTransform(rotationAngle: angle)
-        UIView.animate(withDuration: 1.0, delay: 0 , options: .curveEaseInOut, animations: { [weak self] in
+    func rotateAnimation(angle: CGFloat, duraation: Double, completion: @escaping ()->()){
+        let rotatedAngle = angle / 180 * .pi
+        print("angle: ", angle)
+        print("rotatedAngle: ", rotatedAngle)
+        let rotateTransform = CGAffineTransform(rotationAngle: rotatedAngle)
+        UIView.animate(withDuration: duraation, delay: 0 , options: .curveEaseInOut , animations: { [weak self] in
             self?.transform = rotateTransform
         }) { (_) in
             completion()
@@ -81,6 +84,33 @@ extension UIView{
             viewsDictionary[key] = view
         }
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+    }
+    
+    func setCorner(radius: CGFloat){
+        self.layoutIfNeeded()
+        self.layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+    
+    func setShadow(shadowColor: UIColor, shadowOpacity: Float, offsetWidth width: CGFloat, offsetHeight height: CGFloat){
+        self.layoutIfNeeded()
+        layer.shadowPath = UIBezierPath(roundedRect:
+            bounds, cornerRadius: layer.cornerRadius).cgPath
+        layer.shadowColor = shadowColor.cgColor
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowOffset = CGSize(width: width, height: height)
+        layer.shadowRadius = 1
+        layer.masksToBounds = false
+    }
+    
+    func getShadowArguments() -> (shadowColor: UIColor, shadowOpacity: Float, offsetWidth: CGFloat, offsetHeight: CGFloat){
+        self.layoutIfNeeded()
+        return (
+            UIColor(cgColor: layer.shadowColor!),
+            layer.shadowOpacity,
+            layer.shadowOffset.width,
+            layer.shadowOffset.height   
+        )
     }
     
 }

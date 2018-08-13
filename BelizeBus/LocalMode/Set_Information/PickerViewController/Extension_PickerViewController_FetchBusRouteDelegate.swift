@@ -11,7 +11,6 @@ import UIKit
 
 extension PickerViewController: FetchBusRouteDelegate{
     func fetchBusRoute(busRoute: String) {
-        scheduleView.itinerarySelectionPickerView.busArea = busRoute
         scheduleView.itineraryTableViewCell?.subTitleLabel.text = SubtilteLabelBasicContent.Itinerary.rawValue
         scheduleView.itineraryTableViewCell?.subTitleLabel.textColor = UIColor.classicBrown
         scheduleView.itineraryTableViewCell?.subTitleLabel.font = UIFont.boldSystemFont(ofSize: 18)
