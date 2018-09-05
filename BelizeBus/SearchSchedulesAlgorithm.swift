@@ -4,7 +4,7 @@
 //
 //  Created by 辛忠翰 on 2018/7/11.
 //  Copyright © 2018 辛忠翰. All rights reserved.
-//
+// Beta 10, swift 4.2
 
 import UIKit
 

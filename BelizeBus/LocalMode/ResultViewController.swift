@@ -43,8 +43,8 @@ class ResultViewController: UIViewController {
     
     //被使用者選中要展開的cell(要做點擊才展開的tableView)
     var selectedCellIndexPath = IndexPath(row: 0, section: 0)
-//    var popCellHeight: CGFloat = 266
-    var popCellHeight: CGFloat = 500
+    var popCellHeight: CGFloat = 266
+//    var popCellHeight: CGFloat = 500 //for Ipad
     
     
     
@@ -167,7 +167,7 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource{
             if isTwoStages{
                 height = height + popCellHeight
             }else{
-                height = height + popCellHeight/2 + 20//iphine版行為+10為上面的公車和下面的公車的padding
+                height = height + popCellHeight/2 + 10//ipad版行為+20為上面的公車和下面的公車的padding
             }
         }else{
             height = 120

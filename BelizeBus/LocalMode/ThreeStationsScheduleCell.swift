@@ -178,10 +178,10 @@ extension ThreeStationsScheduleCell{
         busesView.setCorner(radius: 10)
         
         //IPhine版型
-//        firstStageBusView.anchor(top: busesView.topAnchor, bottom: nil, left: leftAnchor, right: rightAnchor, topPadding: 15, bottomPadding: 0, leftPadding: 10, rightPadding: 10, width: 0, height: 110)
-//        secondStageBusView.anchor(top: firstStageBusView.bottomAnchor, bottom: nil, left: firstStageBusView.leftAnchor, right: firstStageBusView.rightAnchor, topPadding: 10, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0 , height: 110)
-        firstStageBusView.anchor(top: busesView.topAnchor, bottom: nil, left: leftAnchor, right: rightAnchor, topPadding: 15, bottomPadding: 0, leftPadding: 20, rightPadding: 10, width: 0, height: 220)
-        secondStageBusView.anchor(top: firstStageBusView.bottomAnchor, bottom: nil, left: firstStageBusView.leftAnchor, right: firstStageBusView.rightAnchor, topPadding: 20, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0 , height: 220)
+        firstStageBusView.anchor(top: busesView.topAnchor, bottom: nil, left: leftAnchor, right: rightAnchor, topPadding: 15, bottomPadding: 0, leftPadding: 10, rightPadding: 10, width: 0, height: 110)
+        secondStageBusView.anchor(top: firstStageBusView.bottomAnchor, bottom: nil, left: firstStageBusView.leftAnchor, right: firstStageBusView.rightAnchor, topPadding: 10, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0 , height: 110)
+//        firstStageBusView.anchor(top: busesView.topAnchor, bottom: nil, left: leftAnchor, right: rightAnchor, topPadding: 15, bottomPadding: 0, leftPadding: 20, rightPadding: 10, width: 0, height: 220)
+//        secondStageBusView.anchor(top: firstStageBusView.bottomAnchor, bottom: nil, left: firstStageBusView.leftAnchor, right: firstStageBusView.rightAnchor, topPadding: 20, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0 , height: 220)
     }
     
     

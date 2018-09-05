@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 extension DateFormatter{
     func fetchDateStr(date: Date, format: String) -> String {
@@ -17,6 +19,8 @@ extension DateFormatter{
 
 
 class IndexViewController: UIViewController {
+    var musicPlayer :AVAudioPlayer?
+
 //    var doneBarButtonItem: UIBarButtonItem?
     let borderBrownColor = UIColor.rgb(red: 181, green: 143, blue: 132)
     let backgroundBrownColor = UIColor.rgb(red: 249, green: 227, blue: 190)
@@ -132,6 +136,7 @@ class IndexViewController: UIViewController {
         setupViews()
         setupNaviStyle()
         setupBlackView()
+        setupBackgroundMusic()
     }
 }
 
@@ -396,6 +401,21 @@ extension IndexViewController{
         UIView.animate(withDuration: 1.0) {
             self.searchButton.alpha = 0.0
         }
+    }
+    
+    fileprivate func setupBackgroundMusic(){
+        
+        guard let soundPath = Bundle.main.path(
+            forResource: "backgroundMusic", ofType: "mp3") else {return}
+        do {
+            musicPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundPath) )
+            // 重複播放次數 設為 0 則是只播放一次 不重複
+            musicPlayer?.numberOfLoops = Int(MAX_INPUT)
+        } catch {
+            print("error")
+        }
+        
+        musicPlayer?.play()
     }
 }
 

@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C013F38320E14F3B00495736 /* South_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C013F37D20E14F3B00495736 /* South_to_East.json */; };
-		C013F38520E14F3B00495736 /* West_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C013F37F20E14F3B00495736 /* West_to_East.json */; };
-		C013F38620E14F3B00495736 /* East_to_South.json in Resources */ = {isa = PBXBuildFile; fileRef = C013F38020E14F3B00495736 /* East_to_South.json */; };
-		C013F38820E14F3B00495736 /* East_to_North.json in Resources */ = {isa = PBXBuildFile; fileRef = C013F38220E14F3B00495736 /* East_to_North.json */; };
 		C013F38A20E1552C00495736 /* SouthernBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F38920E1552C00495736 /* SouthernBusSchedule.swift */; };
+		C015038F2123F18A0010E2AB /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C015038E2123F18A0010E2AB /* backgroundMusic.mp3 */; };
 		C040E60920CF10CB00886552 /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040E60820CF10CB00886552 /* ItineraryTableViewCell.swift */; };
 		C049EADF20CEDF040075B049 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049EADE20CEDF040075B049 /* PickerViewController.swift */; };
 		C04B94A521103087005B1CA4 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04B94A421103086005B1CA4 /* StringProtocolExtension.swift */; };
@@ -63,10 +60,8 @@
 		C0A6B1A020D477730036F41B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B19F20D477730036F41B /* Constant.swift */; };
 		C0A6B1A420D47EBB0036F41B /* BusScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B1A320D47EBB0036F41B /* BusScheduleCollectionViewCell.swift */; };
 		C0ADC0A520DAEA5E009C6F73 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADC0A420DAEA5E009C6F73 /* UIStackViewExtension.swift */; };
-		C0E404BD20E1557700F2BBE5 /* East_to_West.json in Resources */ = {isa = PBXBuildFile; fileRef = C0E404BC20E1557600F2BBE5 /* East_to_West.json */; };
 		C0E404C220E1568000F2BBE5 /* WesternBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E404C120E1568000F2BBE5 /* WesternBusSchedule.swift */; };
 		C0E404C720E199A900F2BBE5 /* AllBusStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E404C620E199A900F2BBE5 /* AllBusStation.swift */; };
-		C0E404C920E1EC7800F2BBE5 /* North_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C0E404C820E1EC7800F2BBE5 /* North_to_East.json */; };
 		C0E91B7320B5F71800808B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91B7220B5F71800808B40 /* AppDelegate.swift */; };
 		C0E91B7A20B5F71A00808B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E91B7920B5F71A00808B40 /* Assets.xcassets */; };
 		C0E91B7D20B5F71A00808B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E91B7B20B5F71A00808B40 /* LaunchScreen.storyboard */; };
@@ -82,14 +77,17 @@
 		C0E91BA220B7696900808B40 /* CustomPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91BA120B7696900808B40 /* CustomPinView.swift */; };
 		C0E91BA420B76ED500808B40 /* CustomPinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91BA320B76ED500808B40 /* CustomPinAnnotationView.swift */; };
 		C0E91BA620B772B300808B40 /* CustomPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E91BA520B772B300808B40 /* CustomPinAnnotation.swift */; };
+		C0F4722F213EDE85002F73E5 /* East_to_West.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F4722D213EDE85002F73E5 /* East_to_West.json */; };
+		C0F47230213EDE85002F73E5 /* West_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F4722E213EDE85002F73E5 /* West_to_East.json */; };
+		C0F47233213EDE93002F73E5 /* South_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F47231213EDE93002F73E5 /* South_to_East.json */; };
+		C0F47234213EDE93002F73E5 /* East_to_South.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F47232213EDE93002F73E5 /* East_to_South.json */; };
+		C0F47237213EDEA1002F73E5 /* North_to_East.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F47235213EDEA1002F73E5 /* North_to_East.json */; };
+		C0F47238213EDEA1002F73E5 /* East_to_North.json in Resources */ = {isa = PBXBuildFile; fileRef = C0F47236213EDEA1002F73E5 /* East_to_North.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C013F37D20E14F3B00495736 /* South_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = South_to_East.json; sourceTree = "<group>"; };
-		C013F37F20E14F3B00495736 /* West_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = West_to_East.json; sourceTree = "<group>"; };
-		C013F38020E14F3B00495736 /* East_to_South.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_South.json; sourceTree = "<group>"; };
-		C013F38220E14F3B00495736 /* East_to_North.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_North.json; sourceTree = "<group>"; };
 		C013F38920E1552C00495736 /* SouthernBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthernBusSchedule.swift; sourceTree = "<group>"; };
+		C015038E2123F18A0010E2AB /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		C040E60820CF10CB00886552 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryTableViewCell.swift; sourceTree = "<group>"; };
 		C049EADE20CEDF040075B049 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		C04B94A421103086005B1CA4 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
@@ -141,10 +139,8 @@
 		C0A6B19F20D477730036F41B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C0A6B1A320D47EBB0036F41B /* BusScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0ADC0A420DAEA5E009C6F73 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
-		C0E404BC20E1557600F2BBE5 /* East_to_West.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_West.json; sourceTree = "<group>"; };
 		C0E404C120E1568000F2BBE5 /* WesternBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternBusSchedule.swift; sourceTree = "<group>"; };
 		C0E404C620E199A900F2BBE5 /* AllBusStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBusStation.swift; sourceTree = "<group>"; };
-		C0E404C820E1EC7800F2BBE5 /* North_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = North_to_East.json; sourceTree = "<group>"; };
 		C0E91B6F20B5F71800808B40 /* BelizeBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelizeBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E91B7220B5F71800808B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E91B7920B5F71A00808B40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +158,12 @@
 		C0E91BA120B7696900808B40 /* CustomPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinView.swift; sourceTree = "<group>"; };
 		C0E91BA320B76ED500808B40 /* CustomPinAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinAnnotationView.swift; sourceTree = "<group>"; };
 		C0E91BA520B772B300808B40 /* CustomPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinAnnotation.swift; sourceTree = "<group>"; };
+		C0F4722D213EDE85002F73E5 /* East_to_West.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_West.json; sourceTree = "<group>"; };
+		C0F4722E213EDE85002F73E5 /* West_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = West_to_East.json; sourceTree = "<group>"; };
+		C0F47231213EDE93002F73E5 /* South_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = South_to_East.json; sourceTree = "<group>"; };
+		C0F47232213EDE93002F73E5 /* East_to_South.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_South.json; sourceTree = "<group>"; };
+		C0F47235213EDEA1002F73E5 /* North_to_East.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = North_to_East.json; sourceTree = "<group>"; };
+		C0F47236213EDEA1002F73E5 /* East_to_North.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = East_to_North.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,14 @@
 				C0E404BF20E155B300F2BBE5 /* Southern */,
 			);
 			path = BusScheduleJSON;
+			sourceTree = "<group>";
+		};
+		C015038D2123F16C0010E2AB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C015038E2123F18A0010E2AB /* backgroundMusic.mp3 */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		C040E60320CEE79C00886552 /* Map */ = {
@@ -352,8 +362,8 @@
 		C0E404BE20E155A000F2BBE5 /* Northen */ = {
 			isa = PBXGroup;
 			children = (
-				C0E404C820E1EC7800F2BBE5 /* North_to_East.json */,
-				C013F38220E14F3B00495736 /* East_to_North.json */,
+				C0F47236213EDEA1002F73E5 /* East_to_North.json */,
+				C0F47235213EDEA1002F73E5 /* North_to_East.json */,
 			);
 			path = Northen;
 			sourceTree = "<group>";
@@ -361,8 +371,8 @@
 		C0E404BF20E155B300F2BBE5 /* Southern */ = {
 			isa = PBXGroup;
 			children = (
-				C013F38020E14F3B00495736 /* East_to_South.json */,
-				C013F37D20E14F3B00495736 /* South_to_East.json */,
+				C0F47232213EDE93002F73E5 /* East_to_South.json */,
+				C0F47231213EDE93002F73E5 /* South_to_East.json */,
 			);
 			path = Southern;
 			sourceTree = "<group>";
@@ -370,8 +380,8 @@
 		C0E404C020E155C500F2BBE5 /* Western */ = {
 			isa = PBXGroup;
 			children = (
-				C0E404BC20E1557600F2BBE5 /* East_to_West.json */,
-				C013F37F20E14F3B00495736 /* West_to_East.json */,
+				C0F4722D213EDE85002F73E5 /* East_to_West.json */,
+				C0F4722E213EDE85002F73E5 /* West_to_East.json */,
 			);
 			path = Western;
 			sourceTree = "<group>";
@@ -406,6 +416,7 @@
 		C0E91B7120B5F71800808B40 /* BelizeBus */ = {
 			isa = PBXGroup;
 			children = (
+				C015038D2123F16C0010E2AB /* SupportingFiles */,
 				C0E91B7220B5F71800808B40 /* AppDelegate.swift */,
 				C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */,
 				C059DB3F20D16FA80070F722 /* LocalMode */,
@@ -500,14 +511,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0E404BD20E1557700F2BBE5 /* East_to_West.json in Resources */,
-				C013F38320E14F3B00495736 /* South_to_East.json in Resources */,
 				C0E91B7D20B5F71A00808B40 /* LaunchScreen.storyboard in Resources */,
-				C0E404C920E1EC7800F2BBE5 /* North_to_East.json in Resources */,
-				C013F38820E14F3B00495736 /* East_to_North.json in Resources */,
-				C013F38520E14F3B00495736 /* West_to_East.json in Resources */,
-				C013F38620E14F3B00495736 /* East_to_South.json in Resources */,
 				C0E91B7A20B5F71A00808B40 /* Assets.xcassets in Resources */,
+				C0F47230213EDE85002F73E5 /* West_to_East.json in Resources */,
+				C0F47237213EDEA1002F73E5 /* North_to_East.json in Resources */,
+				C0F47233213EDE93002F73E5 /* South_to_East.json in Resources */,
+				C0F47234213EDE93002F73E5 /* East_to_South.json in Resources */,
+				C0F4722F213EDE85002F73E5 /* East_to_West.json in Resources */,
+				C015038F2123F18A0010E2AB /* backgroundMusic.mp3 in Resources */,
+				C0F47238213EDEA1002F73E5 /* East_to_North.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.BelizeBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -752,7 +764,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.BelizeBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
