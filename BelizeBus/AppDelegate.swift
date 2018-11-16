@@ -35,7 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         if #available(iOS 11.0, *) {
             UINavigationBar.appearance().largeTitleTextAttributes = [
-                NSAttributedString.Key.foregroundColor : UIColor.white
+                //Beta
+//                NSAttributedString.Key.foregroundColor : UIColor.white
+                NSAttributedStringKey.foregroundColor : UIColor.white
             ]
         } else {
             // Fallback on earlier versions
@@ -49,7 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = UIColor.classicDarkGreen
         UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor.white
+            //Beta
+//            NSAttributedString.Key.foregroundColor : UIColor.white
+            NSAttributedStringKey.foregroundColor : UIColor.white
+
         ]
     }
 

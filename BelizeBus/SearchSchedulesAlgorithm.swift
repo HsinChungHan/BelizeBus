@@ -74,11 +74,11 @@ extension SearchSchedulesAlgorithm{
                     let startTimeHour = Int(startTimeHourStr),
                     let startTimeMinuteStr = information.endTime.fetchSuffix(fromChar: ":"),
                     let startTimeMinute = Int(startTimeMinuteStr)
-                else {return (nil, nil, nil)}
+                    else {return (nil, nil, nil)}
                 
-               
                 
-//                print("startTimeMinute: ", startTimeMinute)
+                
+                //                print("startTimeMinute: ", startTimeMinute)
                 let secondBusInformation = BusInformation(busRoute: busSecondStageInfo.busRoute , startStation: busSecondStageInfo.startStation, endStation: busSecondStageInfo.endStation, day: busSecondStageInfo.day, hour: startTimeHour, minute: startTimeMinute)
                 
                 
@@ -149,7 +149,7 @@ extension SearchSchedulesAlgorithm{
                     print("end time: ",item.fetchValue(index: endStation))
                     print("companyName: ", item.comapnyName)
                     print("bus typw: ", item.busType)
-
+                    
                     print("---------------------------")
                     
                     let finalStation = item.fetchFinalBusStation()
@@ -173,7 +173,7 @@ extension SearchSchedulesAlgorithm{
                     print("end time: ",item.fetchValue(index: endStation))
                     print("companyName: ", item.comapnyName)
                     print("bus typw: ", item.busType)
-
+                    
                     print("---------------------------")
                     newSouthernSchedules.append(item)
                     let finalStation = item.fetchFinalBusStation()
@@ -193,7 +193,7 @@ extension SearchSchedulesAlgorithm{
                     print("end time: ",item.fetchValue(index: endStation))
                     print("companyName: ", item.comapnyName)
                     print("bus typw: ", item.busType)
-
+                    
                     print("---------------------------")
                     newWesternSchedules.append(item)
                     let finalStation = item.fetchFinalBusStation()
@@ -225,14 +225,15 @@ extension SearchSchedulesAlgorithm{
     fileprivate func searchStationsInSameLine(startStation: String, endStation: String, day: String, hour: Int, minute: Int) -> BusInformation?{
         var busRoute: BusRoute?
         var busInfomation: BusInformation?
-        if let startIndex = northernStations.firstIndex(of: startStation), let endIndex = northernStations.firstIndex(of: endStation){
+        
+        if let startIndex = northernStations.index(of: startStation), let endIndex = northernStations.index(of: endStation){
             let value = startIndex - endIndex
             if value > 0{
                 busRoute = NorthRouteContent.North_to_East.rawValue
             }else{
                 busRoute = NorthRouteContent.East_to_North.rawValue
             }
-        }else if let startIndex = westernStations.firstIndex(of: startStation), let endIndex = westernStations.firstIndex(of: endStation){
+        }else if let startIndex = westernStations.index(of: startStation), let endIndex = westernStations.index(of: endStation){
             let value = startIndex - endIndex
             if value > 0{
                 busRoute = WestRouteContent.West_to_East.rawValue
@@ -240,7 +241,7 @@ extension SearchSchedulesAlgorithm{
                 busRoute = WestRouteContent.East_to_West.rawValue
                 
             }
-        }else if let startIndex = southernStations.firstIndex(of: startStation), let endIndex = southernStations.firstIndex(of: endStation){
+        }else if let startIndex = southernStations.index(of: startStation), let endIndex = southernStations.index(of: endStation){
             let value = startIndex - endIndex
             if value > 0{
                 busRoute = SouthRouteContent.South_to_East.rawValue
@@ -267,64 +268,64 @@ extension SearchSchedulesAlgorithm{
         var secondBusInformation: BusInformation
         
         //如果startStation在Northern
-        if let _ = northernStations.firstIndex(of: startStation){
+        if let _ = northernStations.index(of: startStation){
             firstStageRoute = NorthRouteContent.North_to_East.rawValue
             startStationForFirstStage = startStation
-            if let _ = westernStations.firstIndex(of: endStation){
+            if let _ = westernStations.index(of: endStation){
                 //如果endStation在西方
                 endStationForFirstStage = NorthenBusStations.belizeCity.rawValue
                 secondStageRoute = WestRouteContent.East_to_West.rawValue
-//                startStationForSecondStage = WesternBusStations.belizeCity.rawValue
+                //                startStationForSecondStage = WesternBusStations.belizeCity.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }else{
                 //如果endStation在南方
                 endStationForFirstStage = NorthenBusStations.belizeCity.rawValue
                 secondStageRoute = SouthRouteContent.East_to_South.rawValue
-//                startStationForSecondStage = SouthernBusStations.belizeCity.rawValue
+                //                startStationForSecondStage = SouthernBusStations.belizeCity.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }
             
             
-        }else if let _ = westernStations.firstIndex(of: startStation){
+        }else if let _ = westernStations.index(of: startStation){
             //如果startStation在Western
             firstStageRoute = WestRouteContent.West_to_East.rawValue
             startStationForFirstStage = startStation
             
-            if let _ = northernStations.firstIndex(of: endStation){
+            if let _ = northernStations.index(of: endStation){
                 //如果endStation在北方
                 endStationForFirstStage = WesternBusStations.belizeCity.rawValue
                 secondStageRoute = NorthRouteContent.East_to_North.rawValue
-//                startStationForSecondStage = NorthenBusStations.belizeCity.rawValue
+                //                startStationForSecondStage = NorthenBusStations.belizeCity.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }else{
                 //如果endStation在南方
                 endStationForFirstStage = WesternBusStations.belmopan.rawValue
                 secondStageRoute = SouthRouteContent.East_to_South.rawValue
-//                startStationForSecondStage = SouthernBusStations.belmopan.rawValue
+                //                startStationForSecondStage = SouthernBusStations.belmopan.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }
             
             
-        }else if let _ = southernStations.firstIndex(of: startStation){
+        }else if let _ = southernStations.index(of: startStation){
             //如果startStation在Southern
             firstStageRoute = SouthRouteContent.South_to_East.rawValue
             startStationForFirstStage = startStation
-            if let _ = northernStations.firstIndex(of: endStation){
+            if let _ = northernStations.index(of: endStation){
                 //如果endStation在北方
                 endStationForFirstStage = SouthernBusStations.belizeCity.rawValue
                 secondStageRoute = NorthRouteContent.East_to_North.rawValue
-//                startStationForSecondStage = NorthenBusStations.belizeCity.rawValue
+                //                startStationForSecondStage = NorthenBusStations.belizeCity.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }else{
                 //如果endStation在西方
                 endStationForFirstStage = SouthernBusStations.belmopan.rawValue
                 secondStageRoute = WestRouteContent.East_to_West.rawValue
-//                startStationForSecondStage = WesternBusStations.belmopan.rawValue
+                //                startStationForSecondStage = WesternBusStations.belmopan.rawValue
                 startStationForSecondStage = endStationForFirstStage
                 endStationForSecondStage = endStation
             }

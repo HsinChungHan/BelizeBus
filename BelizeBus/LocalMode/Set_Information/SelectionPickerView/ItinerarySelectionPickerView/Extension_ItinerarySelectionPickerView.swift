@@ -56,8 +56,8 @@ extension ItinerarySelectionPickerView{
     func selectedValueForPickerView(startStation: String, endStation: String){
         //beta10
         guard
-            let startIndex = busStations.firstIndex(of: startStation),
-            let endIndex = busStations.firstIndex(of: endStation)
+            let startIndex = busStations.index(of: startStation),
+            let endIndex = busStations.index(of: endStation)
         else{return}
         
         pickerView.selectRow(startIndex, inComponent: 0, animated: true)

@@ -52,7 +52,8 @@
 		C0985B9620F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9520F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift */; };
 		C0985B9820F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9720F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift */; };
 		C0985B9C20F6717900D3D97F /* LocationBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985B9B20F6717900D3D97F /* LocationBusSchedule.swift */; };
-		C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */; };
+		C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithmBeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithmBeta.swift */; };
+		C0996129214019BE004D037B /* SearchSchedulesAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0996128214019BE004D037B /* SearchSchedulesAlgorithm.swift */; };
 		C0A5973D20D972B300D28E3B /* NorthernBusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5973C20D972B300D28E3B /* NorthernBusSchedule.swift */; };
 		C0A5974120D9956600D28E3B /* BusSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5974020D9956600D28E3B /* BusSchedule.swift */; };
 		C0A6B19C20D475320036F41B /* SlideRightTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6B19B20D475320036F41B /* SlideRightTransitionAnimator.swift */; };
@@ -131,7 +132,8 @@
 		C0985B9520F669CF00D3D97F /* Extension_ItinerarySelectionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ItinerarySelectionPickerView.swift; sourceTree = "<group>"; };
 		C0985B9720F669F800D3D97F /* Extension_ItinerarySelectionPickerView_UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ItinerarySelectionPickerView_UIPickerView.swift; sourceTree = "<group>"; };
 		C0985B9B20F6717900D3D97F /* LocationBusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBusSchedule.swift; sourceTree = "<group>"; };
-		C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSchedulesAlgorithm.swift; sourceTree = "<group>"; };
+		C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithmBeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSchedulesAlgorithmBeta.swift; sourceTree = "<group>"; };
+		C0996128214019BE004D037B /* SearchSchedulesAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSchedulesAlgorithm.swift; sourceTree = "<group>"; };
 		C0A5973C20D972B300D28E3B /* NorthernBusSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthernBusSchedule.swift; sourceTree = "<group>"; };
 		C0A5974020D9956600D28E3B /* BusSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSchedule.swift; sourceTree = "<group>"; };
 		C0A6B19B20D475320036F41B /* SlideRightTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRightTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -418,7 +420,8 @@
 			children = (
 				C015038D2123F16C0010E2AB /* SupportingFiles */,
 				C0E91B7220B5F71800808B40 /* AppDelegate.swift */,
-				C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift */,
+				C0985BBB20F68EF900D3D97F /* SearchSchedulesAlgorithmBeta.swift */,
+				C0996128214019BE004D037B /* SearchSchedulesAlgorithm.swift */,
 				C059DB3F20D16FA80070F722 /* LocalMode */,
 				C040E60320CEE79C00886552 /* Map */,
 				C062191120CC2D6D005C6A35 /* Bus_Schedule_Information */,
@@ -569,7 +572,7 @@
 				C054238A2108FDFE005C1E5C /* ResultViewController.swift in Sources */,
 				C07AEBE220F6668600F8D2ED /* Extension_PickerViewController_DecideDoneBtnStateDlegate.swift in Sources */,
 				C0A6B19C20D475320036F41B /* SlideRightTransitionAnimator.swift in Sources */,
-				C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithm.swift in Sources */,
+				C0985BBC20F68EF900D3D97F /* SearchSchedulesAlgorithmBeta.swift in Sources */,
 				C0E91B9D20B6036900808B40 /* UIApplictionExtension.swift in Sources */,
 				C0E404C220E1568000F2BBE5 /* WesternBusSchedule.swift in Sources */,
 				C054238821078EDA005C1E5C /* CAGradientLayer_Extension.swift in Sources */,
@@ -596,6 +599,7 @@
 				C059DB4520D1745E0070F722 /* SegmentedContolView.swift in Sources */,
 				C06EE4B421094AB600D82351 /* ThreeStationsScheduleCell.swift in Sources */,
 				C0A5974120D9956600D28E3B /* BusSchedule.swift in Sources */,
+				C0996129214019BE004D037B /* SearchSchedulesAlgorithm.swift in Sources */,
 				C080730420D1901A0026DDAB /* ItinerarySelectionPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
